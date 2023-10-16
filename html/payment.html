@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aashvi Jwellery</title>
+    <link rel="stylesheet" href="/css/payment.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/aashvi-jwellery-website-favicon-color.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body onload="loader()">
+    <div class="loader-class">
+      <div class="loader"></div>
+    </div>
+    <div class="slogan">
+      <h1>"Be Bold, Be Beautiful, Jewelry that Empowers!"</h1>
+    </div>
+
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="/images/logo-no-background.png" alt="Logo"
+        /></a>
+      </div>
+    </div>
+    <div class="container">
+      <h1>PAYMENT</h1>
+      <div class="box">
+        <img
+          src="/images/WhatsApp Image 2023-06-11 at 2.09.38 PM.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="cnt">
+        <h2>Upload Payment Screenshot Here</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="69e199e4-beca-4473-9f35-11d883c1d384"
+          />
+          <!-- <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          /> -->
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://aashvijwellery.netlify.app/sucess.html"
+          />
+          <input type="hidden" name="from_name" value="Jewelry Customer" />
+          <input
+            type="file"
+            id="myFile"
+            accept="image/png, image/jpg, image/gif, image/jpeg"
+            name="filename"
+            required
+          />
+          <input type="submit" />
+        </form>
+      </div>
+      <div class="btn">
+        <button type="submit" class="btn1">
+          <a href="/html/shipping.html">Go Back</a>
+        </button>
+        <button type="submit" class="btn2">
+          <a href="/html/sucess.html">Continue</a>
+        </button>
+      </div>
+    </div>
+
+    <script src="/js/load.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>

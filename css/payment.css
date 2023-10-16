@@ -1,0 +1,358 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.loader-class{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: 
+    #212121;
+}
+.loader {
+    width: 3em;
+    height: 3em;
+    margin: auto;
+    position: relative;
+  }
+  
+  .loader:before {
+    content: '';
+    width: 3em;
+    height: .3em;
+    background: #f0808050;
+    position: absolute;
+    top: 3.8em;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+  }
+  
+  .loader:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #f08080;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: .35em;
+    animation: jump7456 0.5s linear infinite;
+  }
+  
+  @keyframes jump7456 {
+    15% {
+      border-bottom-right-radius: 3px;
+    }
+  
+    25% {
+      transform: translateY(9px) rotate(22.5deg);
+    }
+  
+    50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+    }
+  
+    75% {
+      transform: translateY(9px) rotate(67.5deg);
+    }
+  
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  
+  @keyframes shadow324 {
+  
+    0%,
+      100% {
+      transform: scale(1, 1);
+    }
+  
+    50% {
+      transform: scale(1.2, 1);
+    }
+  }
+.slogan{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.slogan h1{
+    color: #a0a0b2;
+    text-align: center;
+    padding: .65em 0;
+    letter-spacing: .01em;
+}
+.header{
+    margin: 1em auto;
+    display: flex;
+    width: 92%;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 60%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.container{
+    width: 100%;
+}
+.container h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1em auto;
+    color: #B76E79;
+}
+.box{
+    width: 60%;
+    margin: 1em auto;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: .5em;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+
+}
+.box img{
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+}
+.cnt{
+    margin-top: 3em;
+    width: 100%;
+
+}
+.cnt h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+form{
+    margin: 2em auto;
+    width: 100%;
+    text-align: center;
+}
+input[type="file"]{
+    width: 50%;
+}
+input[type="file"]::file-selector-button {
+    border-radius: .5em;
+    padding: 0 1em;
+    height: 3em;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: .8em;
+    transition: background-color 200ms;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+  }
+  input[type="submit"] {
+    border-radius: .5em;
+    padding: 0 1em;
+    height: 3em;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: .8em;
+    transition: background-color 200ms;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #f3f4f6;
+  }
+  
+  input[type="submit"]:active {
+    background-color: #e5e7eb;
+  }
+ .btn{
+    width: 70%;
+    margin: 2em auto;
+ }
+ .btn1,.btn2{
+    margin: 1em auto;
+padding: .8em 1.6em;
+border-radius: .5em;
+cursor: pointer;
+border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    transition: background-color 200ms;
+
+ }
+ .btn1:hover,.btn2:hover {
+    background-color: #f3f4f6;
+  }
+  .btn1:active,.btn2:active {
+    background-color: #e5e7eb;
+  }
+
+  .btn1 a,.btn2 a{
+    text-decoration: none;
+    color: #434343;
+  }
+  .btn1{
+    background-color: #cce3ff;
+  }
+  .btn2{
+    background-color: #c5f7dd;
+    position: absolute;
+    right: 5em;
+  }
+@media only screen and (max-width: 380px){
+
+    .slogan h1{
+        font-size: .8rem;
+    }
+   .btn1,.btn2{
+    padding: .5em 1em;
+    margin: 0 auto;
+   }
+   .btn{
+    margin: 0 auto;
+   }
+   .cnt{
+    margin-top: 1em;
+   }
+   .container h1{
+    margin-top: 0;
+    margin-bottom: .5em;
+   }
+   .btn2{
+    right: 4em;
+   }
+   
+   
+}
+
+@media only screen and (min-width: 500px ){
+  .btn{
+    width: 65%;
+  }
+  .btn2{
+    right: 7em;
+  }
+}
+@media only screen and (min-width: 750px ){
+.cnt h2{
+    font-size: 1.5rem;
+}
+.btn2{
+    right:9rem;
+}
+}
+
+
+
+
+
+
+@media only screen and (min-width: 900px ){
+.slogan h1{
+        font-size: 1.3rem;
+    }
+.logo{
+margin: 0 auto;
+}
+.btn2{
+    right: 10rem;
+}
+}
+
+@media only screen and (min-width: 1000px ){
+    .header{
+        width: 100%;
+        margin: 1em 0 0 0;
+    }
+   .box{
+    width: 45%;
+   }
+   .cnt h2{
+    font-size: 1.8rem;
+   }
+   input[type=submit],input[type=file]{
+    font-size: 1.4rem;
+
+   }
+   .btn1,.btn2{
+    font-size: 1.4rem;
+   }
+   
+ 
+}
+
+@media only screen and (min-width: 1200px ){
+   
+  .btn{
+    width: 70%;
+  }
+  .btn2{
+    right: 12rem;
+}
+}
+
+@media only screen and (min-width: 1400px ){
+   
+    .btn{
+        width: 65%;
+      }
+      .btn2{
+        right: 12em;
+      }
+  
+}

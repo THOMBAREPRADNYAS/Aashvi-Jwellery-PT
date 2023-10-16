@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aashvi Jwellery</title>
+    <link rel="stylesheet" href="/css/shipping6.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/aashvi-jwellery-website-favicon-color.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body onload="loader()">
+    <div class="loader-class">
+      <div class="loader"></div>
+    </div>
+    <div class="slogan">
+      <h1>"Be Bold, Be Beautiful, Jewelry that Empowers!"</h1>
+    </div>
+
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="/images/logo-no-background.png" alt="Logo"
+        /></a>
+      </div>
+    </div>
+    <div class="container">
+      <h1>SHIPPING</h1>
+
+      <div class="cnt">
+        <h2>Shipping Details</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="69e199e4-beca-4473-9f35-11d883c1d384"
+          />
+          <!-- <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          /> -->
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://aashvijwellery.netlify.app/payment.html"
+          />
+          <input type="hidden" name="from_name" value="Jewelry Customer" />
+          <div class="big">
+            <div class="detail">
+              <label for="first">First Name</label>
+              <input type="text" id="first" name="first_name" required />
+            </div>
+            <div class="detail">
+              <label for="last">Last Name</label>
+              <input type="text" id="last" name="last_name" required />
+            </div>
+            <div class="detail">
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address" required />
+            </div>
+            <div class="detail">
+              <label for="tel">Mobile</label>
+              <input type="number" id="tel" name="mobile" required />
+            </div>
+            <div class="detail">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="big">
+            <div class="detail">
+              <label for="ig">Instagram for oder confirmation</label>
+              <input type="text" id="ig" name="instagram" required />
+            </div>
+            <div class="detail">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" required />
+            </div>
+            <div class="detail">
+              <label for="region">Region</label>
+              <input type="text" id="region" name="region" required />
+            </div>
+            <div class="detail">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" required />
+            </div>
+            <div class="detail">
+              <label for="zip">Zip/Postal code</label>
+              <input type="number" id="zip" name="zip" required />
+            </div>
+            <div class="detail">
+              <input type="submit" />
+            </div>
+          </div>
+        </form>
+        <div class="checkout">
+          <div class="ring">
+            <div class="ring-img">
+              <img src="/images/6.jpg" alt="" />
+            </div>
+            <h4>Real</h4>
+          </div>
+          <div class="total">
+            <h3>Order Summary</h3>
+            <h5><span>Price</span><span class="one"> ฿ 299</span></h5>
+            <h5><span>Shipping</span><span class="one">0</span></h5>
+            <h5><span>Quatity</span><span class="one"> 1</span></h5>
+            <hr />
+            <h5><span>Total</span><span class="one"> ฿ 299</span></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/load.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>
